@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Zois Boukouvalas--Code</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="Code.html">Code</a></h1>
+        </div>
+      </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Publications.html">Publications</a></li>
+          <li class="selected"><a href="Code.html">Code</a></li>
+          <li><a href="Teaching.html">Teaching</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+     <div class="gallery">
+        <ul class="images">
+          <img width="990" height="557" src="images/graph.png" alt="simplistic 1" />
+        </ul>
+      </div>
+	  
+		<div class="content">
+				<h2><font size="+2">Matlab Code</font></h2>
+			<ul>
+			Here you can find Matlab code from my research work. For more resources you can also visit <a href="http://mlsp.umbc.edu/resources.html">MLSP Laboratory. </a> Please feel free to contact me if you have any questions or comments regarding the code.</li>
+			</ul>		
+
+			<ul>
+			<li><strong><font size="+1">Sparse ICA: Independence Vs Sparsity</font></strong></li>
+			<br>For a given dataset, BSS provides useful decompositions under minimum assumptions typically by making use of statistical properties---forms of diversity---of the data. 
+			Two popular forms of diversity that have proven useful for many applications are <i>statistical independence</i> and <i>sparsity</i>. Although many methods have been proposed 
+			for the solution of the BSS problem that take either the statistical independence or the sparsity of the data into account, there is no unified method that can take into 
+			account both forms of diversity simultaneously. The proposed algorithm, SparseICA by entropy bound minimization (SparseICA-EBM), inherits all the advantages of ICA by entropy 
+			bound minimization (ICA-EBM), namely its flexibility, though with enhanced performance due to the exploitation of the sparsity of the underlying sources (when they are indeed sparse) 
+			and enables direct control over the degree to which independence and sparsity are emphasized.</br>
+			<br><strong>Sparse ICA by entropy bound minimization</strong><a href="SparseICA_EBM.zip"> SparseICA-EBM</a></br>
+			<br><strong>References</strong></br>
+			<br>[1] Z. Boukouvalas, Y. Levin-Schwartz, Vince D. Calhoun, and T. Adali, "<a href= "https://www.sciencedirect.com/science/article/pii/S0016003217303174"-->Sparsity and Independence: Balancing of two Objectives in Optimization for Source Separation with Application to fMRI Analysis</a>," Elsevier, Journal of the Franklin Institute (JFI), Engineering and Applied Mathematics, 2017.</br>
+			<br>[2] Z. Boukouvalas, Y. Levin-Schwartz, and T. Adali, "<a href="http://ieeexplore.ieee.org/document/7952613/"-->Enhancing ICA Performance By Exploiting Sparsity: Application to fMRI Analysis</a>," In the proceedings of <em>2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em>, New Orleans, LA, March 2017 pp 2532 - 2536.</br>
+			</ul>
+			
+			<ul>
+			<li><strong><font size="+1">Multivariate Generalized Gaussian Distribution (MGGD) and Parameter Estimation</font></strong></li>
+			<br>Multivariate generalized Gaussian distribution (MGGD) has been an attractive solution to many signal processing problems due to its simple yet flexible parametric form, which 
+			requires the estimation of only a few parameters, i.e., the scatter matrix and the shape parameter. We present the code for generating realizations from the MGGD as well as 
+			estimating its parameters [1]. The MGGD can be characterized using two parameters, the scatter matrix and the shape parameter. If the shape parameter is less than 1 the distribution 
+			of the marginals is super-Gaussian (i.e. more peaky, with heavier tails) and if the shape parameter is greater than 1, the distribution of the marginals is sub-Gaussian (i.e., less peaky with lighter tails). 
+			If shape parameter is equal to 1, then we generate multivariate Gaussian sources.</br>
+			<br><strong>MGGD generation and parameter estimation</strong><a href="MGGD_Estimation.zip"> MGGD-Generation-Estimation</a></br>
+			<br><strong>References</strong></br>
+			<br>[1] Z. Boukouvalas, S. Said, L. Bombrun, Y. Berthoumieu, and T. Adali, "<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7268761"> A new Riemannian averaged fixed-point algorithm for MGGD parameter estimation</a>," IEEE Signal Proc. Letts., vol. 22, no. 12, pp. 2314-2318, Dec. 2015.</br>
+			</ul>
+			
+			<ul>
+			<li><strong><font size="+1">Independent Vector Analysis with Adaptive MGGD (IVA-A-GGD)</font></strong></li>
+			<br>Due to each flexibility, MGGD provides an effective model for IVA. Modeling the latent multivariate variables--sources--the performance of the IVA algorithm highly depends on the estimation of the source 
+			parameters. We present two different IVA-A-GGD algorithms that estimate the shape parameter and scatter matrix jointly, while taking both SOS and HOS into account. The first algorithm is based on a Fisher scoring (FS) algorithm [1] (IVA-A-GGD-MLFS) and 
+			the second on a fixed point (FP) algorithm [2] IVA-A-GGD-RAFP.		
+			</br>
+			<br><strong>IVA-A-GGD algorithms</strong><a href="IVACodes.zip"> IVA-A-GGD</a></br>
+			<br><strong>References</strong></br>
+			<br>[1] Z. Boukouvalas, G.-S. Fu, and T. Adali, <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7086828" target="_blank">"An efficient multivariate generalized Gaussian distribution estimator: Application to IVA,"</a> in <em> Proc. Conf. on Info. Sciences and Systems (CISS), </em> Baltimore, MD, March 2015.</br>
+			<br>[2] Z. Boukouvalas, S. Said, L. Bombrun, Y. Berthoumieu, and T. Adali, "<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7268761"> A new Riemannian averaged fixed-point algorithm for MGGD parameter estimation</a>," IEEE Signal Proc. Letts., vol. 22, no. 12, pp. 2314-2318, Dec. 2015.</br>
+
+			</ul>
+			
+			<h2><font size="+2">Python Code</font></h2>
+			<ul>
+			<li><strong><font size="+1">Independence Vector Analysis in Python</font></strong></li>
+			<br>
+			pyiva is a python package which implements the independent vector analysis (IVA) using a multivariate Laplace prior. 
+			</br>
+			<br><strong><a href="https://github.com/zoisboukouvalas/pyiva"> pyIVA</a></strong></br>
+			</ul>
+		</div>	
+		
+    </div>
+    <footer>
+      <p>Copyright &copy; CSS3_simplistic | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>
