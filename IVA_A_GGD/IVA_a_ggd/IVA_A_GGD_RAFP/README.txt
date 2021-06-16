@@ -1,0 +1,1 @@
+iva_a_ggd_decp_RA_FP_P.m is the parallel version of iva_a_ggd_decp_RA_FP.m
